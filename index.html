@@ -1,11 +1,73 @@
+<?php
+// Main Index Page - All Assignments
+?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=index.php">
-    <title>Redirecting to Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Assignments - Dashboard</title>
+    <link rel="stylesheet" href="public/css/style.css">
 </head>
+
 <body>
-    <p>If you are not redirected automatically, <a href="index.php">click here to open the dashboard</a>.</p>
+    <div class="container">
+        <header>
+            <h1>📚 Programming Assignments Dashboard</h1>
+            <p>Click on any assignment to get started</p>
+        </header>
+
+        <nav class="assignments-nav">
+            <div class="assignments-grid">
+                <a href="assignment1.html" class="assignment-card assignment-card-1">
+                    <div class="card-icon">👥</div>
+                    <h3>Assignment 1</h3>
+                    <p>Student Data Management</p>
+                    <small>HTML, JS, PHP, MySQL</small>
+                </a>
+
+                <a href="assignment2.html" class="assignment-card assignment-card-2">
+                    <div class="card-icon">✅</div>
+                    <h3>Assignment 2</h3>
+                    <p>Todo List Application</p>
+                    <small>JS with Arrays</small>
+                </a>
+
+                <a href="assignment3.html" class="assignment-card assignment-card-3">
+                    <div class="card-icon">🔄</div>
+                    <h3>Assignment 3</h3>
+                    <p>String Replacement</p>
+                    <small>Replace Placeholders</small>
+                </a>
+
+                <a href="assignment4.html" class="assignment-card assignment-card-4">
+                    <div class="card-icon">📅</div>
+                    <h3>Assignment 4</h3>
+                    <p>Days Between Dates</p>
+                    <small>Numeric & Word Format</small>
+                </a>
+
+                <a href="assignment5.html" class="assignment-card assignment-card-5">
+                    <div class="card-icon">📝</div>
+                    <h3>Assignment 5</h3>
+                    <p>HTML Find & Replace</p>
+                    <small>PHP String Replacement</small>
+                </a>
+
+                <a href="assignment6.html" class="assignment-card assignment-card-6">
+                    <div class="card-icon">🔢</div>
+                    <h3>Assignment 6</h3>
+                    <p>Triplet Sum Finder</p>
+                    <small>Array Operations</small>
+                </a>
+            </div>
+        </nav>
+
+        <footer>
+            <p>&copy; 2026 Programming Assignments | All implementations completed</p>
+        </footer>
+    </div>
 </body>
+
 </html>
