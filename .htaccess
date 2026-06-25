@@ -1,0 +1,14 @@
+# Force the PHP dashboard as the default homepage
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Redirect direct README.md requests to the root dashboard
+    RewriteRule ^README\.md$ / [R=301,L]
+
+    # If requested path does not exist, route to index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^.*$ index.php [L]
+</IfModule>
