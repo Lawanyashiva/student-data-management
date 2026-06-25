@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3 - String Replacement</title>
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Dashboard</a>
+
+        <header>
+            <h1>🔄 String Replacement Tool</h1>
+            <p>Replace placeholders (@Name@, @email@, @mobile@, @designation@) in text</p>
+        </header>
+
+        <div id="errorMessages"></div>
+
+        <div class="form-container">
+            <h2>Enter Your Details</h2>
+
+            <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" placeholder="e.g., RRRR" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" placeholder="e.g., RRR@RRR.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile">Mobile Number *</label>
+                <input type="tel" id="mobile" placeholder="e.g., 9988775566" required>
+            </div>
+
+            <div class="form-group">
+                <label for="designation">Designation *</label>
+                <input type="text" id="designation" placeholder="e.g., Software Developer" required>
+            </div>
+
+            <h2 style="margin-top: 30px;">Input String</h2>
+            <div class="form-group">
+                <label for="inputString">Enter text with placeholders (@Name@, @email@, @mobile@, @designation@)
+                    *</label>
+                <textarea id="inputString" placeholder="Enter your text here..." style="height: 200px;"
+                    required></textarea>
+            </div>
+
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <button onclick="performStringReplacement()"
+                    style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">Replace Placeholders</button>
+                <button onclick="loadSampleData()" style="background: #4facfe;">Load Sample Data</button>
+                <button onclick="clearAll()" style="background: #fa709a;">Clear All</button>
+            </div>
+        </div>
+
+        <div class="output-section" id="replacementOutput">
+            <!-- Output will be displayed here -->
+        </div>
+
+        <div class="info-message" style="margin-top: 20px;">
+            <strong>How to use:</strong>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li>Enter your name, email, mobile, and designation</li>
+                <li>Enter a text containing placeholders: @Name@, @email@, @mobile@, @designation@</li>
+                <li>Click "Replace Placeholders" to perform replacements</li>
+                <li>Copy result or download as text file</li>
+                <li>Click "Load Sample Data" to see an example</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Assignment 3: String Replacement | Using JavaScript replace() method</p>
+        </footer>
+    </div>
+
+    <script src="public/js/assignment3.js"></script>
+</body>
+
+</html>
